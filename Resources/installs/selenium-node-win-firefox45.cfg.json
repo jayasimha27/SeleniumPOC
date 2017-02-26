@@ -1,0 +1,24 @@
+{
+"class": "org.openqa.grid.common.RegistrationRequest",
+"capabilities": [
+{
+"seleniumProtocol": "WebDriver",
+"browserName": "firefox",
+"version": "45.7.0",
+"maxInstances": 5,
+"platform" : "WINDOWS"
+}
+],
+"configuration": {
+"port": 7777,
+"register": true,
+"host": "localhost",
+"maxSession": 5,
+"hubHost": "localhost",
+"role": "webdriver",
+"registerCycle": 5000,
+"hub": "http://localhost:4444/grid/register",
+"hubPort": 4444,
+"remoteHost": "http://localhost:7777"
+}
+}

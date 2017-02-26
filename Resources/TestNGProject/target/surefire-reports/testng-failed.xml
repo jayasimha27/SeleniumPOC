@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test-class Suite]" parallel="tests">
+  <parameter name="test-name" value="TestNG Test Two"/>
+  <test name="Test-class test 1">
+    <parameter name="test-name" value="TestNG Test One"/>
+    <classes>
+      <class name="com.parallel.suite.ParallelSuiteTest"/>
+    </classes>
+  </test> <!-- Test-class test 1 -->
+  <test name="Test-class test 2">
+    <parameter name="test-name" value="TestNG Test Two"/>
+    <classes>
+      <class name="com.parallel.suite.ParallelSuiteTest"/>
+    </classes>
+  </test> <!-- Test-class test 2 -->
+</suite> <!-- Failed suite [Test-class Suite] -->

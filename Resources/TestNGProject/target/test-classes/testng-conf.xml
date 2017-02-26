@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="My test suite" preserve-order="true">
+    <suite-files>
+        <!--suite-file path="basic-test.xml"></suite-file>
+        <suite-file path="classes-test.xml"></suite-file>
+        <suite-file path="methods-test.xml"></suite-file>
+        <suite-file path="group-test.xml"></suite-file>
+        <suite-file path="parameter-test.xml"></suite-file>
+        <suite-file path="independent-test.xml"></suite-file-->
+        <suite-file path="suite-test.xml"></suite-file>
+    </suite-files>
+</suite>

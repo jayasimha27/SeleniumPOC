@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- @BasicSuite -->
+<suite name="TestAll">
+    <test name="My Basic Test">
+        <classes>
+            <class name="com.example.basic.test.BasicTest" />
+        </classes>
+    </test>
+</suite>
