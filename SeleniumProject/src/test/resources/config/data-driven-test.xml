@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Test" parallel="classes" thread-count="2">
+    <test name="Parallel DataDriven Test">
+        <classes>
+            <class name="com.example.selenium.data.driven.XLSDataReader"/>
+            <class name="com.example.selenium.data.driven.CSVDataReader"/>
+        </classes>
+    </test>
+</suite>

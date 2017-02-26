@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Grid Suite" parallel="tests" thread-count="3">
+    <test name="Firefox Test">
+        <parameter name="platform" value="Windows" />
+        <parameter name="browser" value="Firefox" />
+        <parameter name="version" value="45.7.0" />
+        <parameter name="url" value="http://localhost:8080/WebApplication/pages/login.html" />
+        <classes>
+            <class name="com.example.selenium.grid.SeleniumGridTest" />
+        </classes>
+    </test>
+    <test name="Chrome Test">
+        <parameter name="platform" value="Windows" />
+        <parameter name="browser" value="Chrome" />
+        <parameter name="version" value="56.0.2924.87" />
+        <parameter name="url" value="http://localhost:8080/WebApplication/pages/login.html" />
+        <classes>
+            <class name="com.example.selenium.grid.SeleniumGridTest" />
+        </classes>
+    </test>
+</suite>
+

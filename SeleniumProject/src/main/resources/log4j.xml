@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true"
+                     xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+    <!-- Deafult Application Level Configuration  -->
+    <appender name="CONSOLE_LOG" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="APPLICATION_LOG" class="org.apache.log4j.RollingFileAppender">
+        <param name="append" value="true" />
+        <param name="maxFileSize" value="5MB" />
+        <param name="maxBackupIndex" value="10" />
+        <param name="file" value="D:\\log\\seleniumWebDriverPOC.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+        
+        <rollingPolicy name="APPLICATION_LOG_ROLLING" class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param name="FileNamePattern" value="D:\\log\\archive\\seleniumWebDriverPOC-%d{yyyy-MM-dd-HH-mm}.log" />
+            <!-- The below param will keep the live update file in a different location-->
+            <!-- param name="ActiveFileName" value="current/MyLog.log" /-->
+        </rollingPolicy>
+
+    </appender>
+    <!-- categories -->
+    <category name="com.example.selenium.util.Log4JExample">
+        <priority value="DEBUG" />
+    </category>
+    
+    <!--logger name="com.example.selenium.util">
+        <level value="DEBUG" />
+    </logger-->
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="CONSOLE_LOG" />
+        <appender-ref ref="APPLICATION_LOG" />
+    </root>
+    
+    
+</log4j:configuration>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="5">
+    <test name="Selenium Grid Data-Driven Test">
+        <classes>
+            <class name="com.example.selenium.grid.SeleniumGridChrome"/>
+            <class name="com.example.selenium.grid.SeleniumGridFireFox"/>
+            <class name="com.example.selenium.grid.SeleniumGridIE"/>
+        </classes>
+    </test>
+</suite>

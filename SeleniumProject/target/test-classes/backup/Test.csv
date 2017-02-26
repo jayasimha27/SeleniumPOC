@@ -1,0 +1,3 @@
+run,Text1,Text2,TextAread,FilePath,CheckBox1,CheckBox2,CheckBox3,Radio1,Radio2,Radio3,Select,MultiSelect
+Y,Jayasimha,Bangalore,What's Selenium ? \n Selenium is a portable software testing framework for web applications.,"D:\\workspace\\test.txt",T,F,T,F,F,T,3,"2,4"
+Y,Srivatsa,Bangalore,What's Selenium ? \n Selenium is a portable software testing framework for web applications.,"D:\\workspace\\test.txt",F,F,T,T,F,F,2,"1,2"
