@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="My test suite" preserve-order="true">
     <suite-files>
-        <suite-file path="data-driven-test.xml"></suite-file>
-        <!--suite-file path="segrid-test.xml"></suite-file>
-        <suite-file path="segrid-data-test.xml"></suite-file-->
+        <!--suite-file path="data-driven-test.xml"></suite-file-->
+        <suite-file path="segrid-test.xml"></suite-file>
+        <!--suite-file path="segrid-data-test.xml"></suite-file-->
     </suite-files>
 </suite>
